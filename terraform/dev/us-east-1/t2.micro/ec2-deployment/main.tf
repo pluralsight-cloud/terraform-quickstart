@@ -13,7 +13,6 @@ locals {
 
 module "instance" {
   source         = "../../../../../modules/dev/instance"
-  location       = local.location
   instance_type  = local.instance_type
   instance_count = 2
   subnet_id      = module.vpc.subnet_id
